@@ -1,0 +1,1 @@
+<card *ngFor="let card of cards; let i = index" [card]="card" [flipped]="clickedCardMask[i]" (click)="onCardClick(card)" (delete)="onCardDelete($event)"></card>
